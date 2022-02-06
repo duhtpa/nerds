@@ -2,8 +2,10 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Roboto", Arial, serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
+
+  width: 1440px;
 
   /* background-color: #fff;
   background-image: url(./img/bg.jpg);
@@ -15,22 +17,34 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden,
+.display-none {
+  display: none; 
+}
+
 .main-header {
   background-color: #eeeeee;
+  padding: 0 140px;
 }
 
 .main-navigation {
-  font-weight: 400; /* medium */
-  text-transform: uppercase;
+  font-weight: 500;
   display: flex;
+  text-transform: uppercase;
+  padding-top: 48px;
+}
+
+.main-navigation a{
+  color: #000;
 }
 
 .main-navigation ul {
-  list-style: none;
   display: inherit;
+  list-style: none;
 }
 
 .navigation-user {
+  margin: auto;
   margin-left: auto;
 }
 
@@ -41,3 +55,103 @@ a {
 .navigation-site a {
   padding: 16px 24px;
 }
+/* main */
+.wrapper {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.slider {
+  background-color: #eeeeee;
+  height: 413px;
+}
+
+.slider ul {
+  list-style: none;
+  padding: 0;
+}
+
+.slider li {
+  display: flex;
+}
+
+.slider-img {
+  background-image: url("../img/slide1.png");
+  width: 698px;
+  height: 413px;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.tagline {
+  width: 380px;
+  /* margin-left: 140; */
+}
+
+.tagline-description {
+  display: flex;
+  flex-direction: column;
+  /* width: 535px; */
+}
+
+.tagline-description p {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  margin-top: 72px;
+  margin-bottom: 28px;
+}
+
+.tagline-description span {
+  margin-bottom: 28px;
+  line-height: 24px;
+  color:#283136;
+}
+
+.button {
+  text-transform: uppercase;
+  color: #fff;
+  display: block;
+  background-color: #FB565A;
+  text-align: center;
+  padding-top: 15px;
+  border: none;
+  border-radius: 3px;
+}
+
+.tagline-description a {
+  width: 240px;
+  height: 35px;
+}
+
+.advantages-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.advantages-item h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.advantages-item .button {
+  width: 160px;
+  padding-bottom: 19px;
+}
+
+.advantages-item:nth-child(2) .button {
+  background-color: #00CA74;
+}
+
+.advantages-item:nth-child(3) .button {
+  background-color: #EFC84A;
+}
+
+/* .advantages-item img {
+  order: 0;
+} */
+
+/* Закрыто? Хорошшо */
