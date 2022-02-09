@@ -150,6 +150,73 @@ a {
   background-color: #EFC84A;
 }
 
+.about-columns,
+.partners-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-thesis p {
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.thesis-list span,
+.about-numbers p {
+  text-transform: uppercase;
+  font-weight: 700;
+  display: block;
+  margin-top: 41px;
+}
+
+.thesis-list ul {
+  padding: 0;
+  padding-left: 30px;
+}
+
+.thesis-list li {
+  list-style: none;
+  position: relative;
+  margin-top: 20px;
+}
+
+.thesis-list li::before {
+  display: inline-block;
+  content: '';
+  width: 15px;
+  height: 3px;
+  background-color: #000;
+  position: absolute;
+  bottom: 8px;
+  left: -20px;
+}
+
+.about-numbers {
+  text-align: center;
+}
+
+.about-numbers ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.numbers-list p {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.numbers-list sup {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.about-partners ul {
+  list-style: none;
+}
+
 /* .advantages-item img {
   order: 0;
 } */
