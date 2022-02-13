@@ -131,10 +131,20 @@ a {
   padding: 0;
 }
 
+.advantages-item {
+  display: flex;
+  flex-direction: column;
+}
+
 .advantages-item h3 {
   text-transform: uppercase;
   font-size: 24px;
   line-height: 30px;
+  /* order: 0; */
+}
+
+.advantages-item img {
+  order: -1;
 }
 
 .advantages-item .button {
@@ -217,8 +227,121 @@ a {
   list-style: none;
 }
 
-/* .advantages-item img {
-  order: 0;
-} */
+.contacts {
+  position: relative;
+}
 
-/* Закрыто? Хорошшо */
+.contacts-description {
+  position: absolute;
+  box-sizing: border-box;
+  top: 50px;
+  left: 140px;
+  width: 308px;
+  height: 319px;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 40px 50px;
+}
+
+.contacts-description h3 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.contacts-description span {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.contacts-description button {
+  margin-top: 38px;
+  width: 219px;
+  padding-bottom: 19px;
+}
+
+.main-footer {
+  display: flex;
+  margin-top: 67px;
+  margin-bottom: 68px;
+}
+
+.social-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  min-width: 400px;
+}
+
+.social-link {
+  display: flex;
+  width: 81px;
+  height: 81px;
+  background-color: #E1E1E1;
+  margin-right: 10px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.promotion p {
+  font-weight: 700;
+  font-size: 36px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/* catalog.html */
+
+.catalog-header {
+  background-color: #eeeeee;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  text-align: center;
+  font-size: 55px;
+  font-weight: 500;
+}
+
+.catalog-wrapper {
+  display: flex;
+  margin-top: 35px;
+}
+
+.filter-form fieldset {
+  border: none;
+  width: 200px;
+  padding: 0;
+}
+
+.filter-label {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.filter-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.filter-item {
+  line-height: 39px;
+}
+
+.templates-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.templates-item {
+  margin-bottom: 15px;
+}
+
+.breadcrumbs-list {
+  display: flex;
+  list-style-type: none;
+}
