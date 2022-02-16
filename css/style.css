@@ -328,6 +328,20 @@ a {
 
 .filter-item {
   line-height: 39px;
+  position: relative;
+}
+
+.filter-item input[type="radio"]::before {
+  display: block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 5px solid #4D4D4D;
+  opacity: 0.4;
+  position: absolute;
+  left: -15px;
+  top: 6px;
+  border-radius: 50%;
 }
 
 .templates-list {
@@ -344,4 +358,37 @@ a {
 .breadcrumbs-list {
   display: flex;
   list-style-type: none;
+}
+
+.feedback {
+  width: 870px;
+  height: 487px;
+  box-shadow: 5px 5px 15px #000;
+  padding: 20px 50px;
+}
+
+.feedback h2 {
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.feedback-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feedback-form label {
+  display: block;
+  font-weight: 700;
+}
+
+.feedback-form input {
+  padding: 10px;
+  padding-bottom: 20px;
+  width: 350px;
+}
+
+.feedback-form input[name="message"] {
+  width: 800px;
 }
